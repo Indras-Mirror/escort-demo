@@ -1,24 +1,25 @@
 /* ============================================================
-   Brittney Fox — Independent Companion
-   Elegant, discrete, high-end single-page design.
+   Escort Demo — Celeste Moreau
+   Cool-toned luxury: navy charcoal + platinum accents.
+   Distinct from the warm gold/red client template.
    ============================================================ */
 
 :root {
-  --bg: #0a0808;
-  --bg-alt: #100d0d;
-  --bg-card: #1a1515;
-  --text: #e0d8d0;
-  --text-muted: #9a9288;
-  --accent: #c9a87c;
-  --accent-glow: #d4b896;
-  --accent-red: #8b1a1a;
-  --accent-red-glow: #3a0f0f;
-  --border: #2a2222;
-  --border-light: #332828;
+  --bg: #07090c;
+  --bg-alt: #0d1014;
+  --bg-card: #14171c;
+  --text: #d4d8dd;
+  --text-muted: #889098;
+  --accent: #b8bcc4;
+  --accent-glow: #c8ccd4;
+  --accent-warm: #847060;
+  --accent-blue-glow: #0f1a28;
+  --border: #1e2228;
+  --border-light: #2a2e34;
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Inter', -apple-system, sans-serif;
   --max-width: 1100px;
-  --radius: 4px;
+  --radius: 2px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,9 +38,9 @@ body::before {
   content: '';
   position: fixed; inset: 0; z-index: 0; pointer-events: none;
   background:
-    radial-gradient(ellipse 100% 80% at 50% 30%, rgba(100,15,15,0.04) 0%, rgba(60,10,10,0.02) 40%, transparent 80%),
-    radial-gradient(ellipse 80% 60% at 50% 80%, rgba(70,10,10,0.025) 0%, rgba(40,8,8,0.01) 50%, transparent 100%),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    radial-gradient(ellipse 100% 80% at 50% 30%, rgba(30,40,60,0.04) 0%, rgba(15,20,35,0.02) 40%, transparent 80%),
+    radial-gradient(ellipse 80% 60% at 50% 80%, rgba(20,30,50,0.025) 0%, rgba(10,15,25,0.01) 50%, transparent 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
   background-size: 100% 100%, 100% 100%, 256px 256px;
 }
 
@@ -112,7 +113,7 @@ h3 { font-size: 1.4rem; font-weight: 500; }
 .hero-overlay {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 120% 80% at 50% 40%, rgba(100,15,15,0.07) 0%, rgba(50,8,8,0.02) 50%, transparent 90%);
+    radial-gradient(ellipse 120% 80% at 50% 40%, rgba(40,50,70,0.06) 0%, rgba(20,25,40,0.02) 50%, transparent 90%);
 }
 .hero-content {
   position: relative; text-align: center; max-width: 700px; margin: 0 auto;
@@ -130,8 +131,8 @@ h3 { font-size: 1.4rem; font-weight: 500; }
   width: 80px; height: 80px; margin-bottom: 20px; opacity: 0.85;
 }
 .hero-image {
-  width: 520px; height: 520px; border-radius: 50%; object-fit: cover;
-  border: 2px solid var(--border-light); margin-bottom: 32px;
+  width: 340px; height: 440px; border-radius: var(--radius); object-fit: cover;
+  border: 1px solid var(--border-light); margin-bottom: 32px;
 }
 .hero-buttons { display: flex; gap: 16px; justify-content: center; margin-top: 40px; flex-wrap: wrap; }
 .hero-scroll {
@@ -232,7 +233,7 @@ h3 { font-size: 1.4rem; font-weight: 500; }
 
 /* CTA */
 .cta-section {
-  background: radial-gradient(ellipse 100% 70% at 50% 50%, rgba(90,12,12,0.06) 0%, rgba(40,8,8,0.015) 45%, transparent 85%);
+  background: radial-gradient(ellipse 100% 70% at 50% 50%, rgba(40,50,70,0.05) 0%, rgba(15,20,35,0.015) 45%, transparent 85%);
   text-align: center; padding: 100px 24px;
 }
 .cta-content { max-width: 600px; margin: 0 auto; }
@@ -348,6 +349,6 @@ h3 { font-size: 1.4rem; font-weight: 500; }
   .availability-grid { grid-template-columns: repeat(2, 1fr); }
   .about-details { grid-template-columns: 1fr; }
   .hero-buttons { flex-direction: column; align-items: center; }
-  .hero-image { width: 280px; height: 280px; }
+  .hero-image { width: 260px; height: 340px; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
